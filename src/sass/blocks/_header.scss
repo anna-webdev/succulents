@@ -1,0 +1,47 @@
+.header {
+    padding-top: 34px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    &__logo {
+        width: 157px;
+        height: 33px;    
+        img {
+            width: 100%;
+        }    
+    }
+    &__hamburger {
+        cursor: pointer;
+        position: fixed;
+        right: 150px;
+        width: 40px;
+        height: 20px;
+        span {
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: $main-color;
+            margin-top: 7px;
+            &:first-child {
+                margin-top: 0;
+            }
+            transition: all 0.7s;
+        }
+        &_active {
+            span {
+                &:nth-child(1) {
+                    transform: translateY(9px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+
+    
+}

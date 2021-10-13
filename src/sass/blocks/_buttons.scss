@@ -1,0 +1,16 @@
+.button {
+    width: 210px;
+    height: 60px;
+    border: none;
+    background: $main-color;
+    box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 16px;
+    color: #FFFFFF;
+    &_clear {
+       border: 1px solid $main-color;
+       background: none;
+       color: $main-color;
+       box-shadow: none;
+    }
+}
