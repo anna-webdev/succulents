@@ -13,4 +13,27 @@
        color: $main-color;
        box-shadow: none;
     }
+    &_about {
+        display: block;
+        margin: 35px 0 0 auto;    
+    }
+    &_card {
+        width: 159px;
+        height: 50px;
+        font-size: 14px;
+    }
+    &_card-light {
+        width: 129px;
+        height: 50px;
+        border: 1px solid $main-color;
+        background: none;
+        color: $main-color;
+        box-shadow: none;
+    }
+    &_send {
+        margin-top: 60px;
+        width: 208px;
+        height: 50px;
+        font-size: 14px;
+    }
 }

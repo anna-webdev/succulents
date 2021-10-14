@@ -1,0 +1,25 @@
+.footer {
+    min-height: 400px;
+    padding: 70px 0 50px 0;  
+    background: rgba(44, 69, 67, 0.8);
+    &__links {
+        margin: 77px auto 0 auto;
+        text-align: center;
+        color: #fff;
+        a {
+            color: #FFFFFF;
+            font-weight: 300;
+            font-size: 14px;
+        }
+    }
+    &__logo {
+        margin: 78px auto 0 auto;
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+
+        }
+    }
+}

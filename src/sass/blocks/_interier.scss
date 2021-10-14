@@ -1,0 +1,15 @@
+.interier {
+    min-height: 700px;
+    padding: 130px 0 154px 0;
+    &__carousel {
+        width: 100%;
+        margin: 40px auto 0 auto;        
+    }
+    &__photo {
+        width: 30%;
+        margin-right: 20px;
+        img {
+            width: 100%
+        }
+    }
+}

@@ -2,6 +2,14 @@
     height: 30px;
     &_promo {
         margin-top: 128px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &_footer {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        width: 170px;
     }
     &__icon {
         display: inline-block;
@@ -9,9 +17,16 @@
         margin-left: 24px;
         color: $main-color;
         text-decoration: none;
+        &:first-child {
+            margin-left: 0;
+        }
         span {
             font-size: 28px;
             color: $main-color;
         }
+        &_footer {
+            color: #FFF; 
+        }
     }
+
 }

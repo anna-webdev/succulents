@@ -1,0 +1,16 @@
+.why {
+    min-height: 900px;
+    padding: 162px 0 630px 0;
+    background: url(../../img/why_bg.jpg) center (center/cover) no-repeat;
+    &__descr {
+        width: 798px;
+        margin: 60px auto 0 auto;
+        text-align: center;
+        font-family: 'Roboto';
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 141.69%;
+        opacity: 0.8;
+        color: $main-color;
+    }
+}

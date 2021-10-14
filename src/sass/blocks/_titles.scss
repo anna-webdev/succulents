@@ -1,0 +1,34 @@
+.title {
+    font-size: 55px;
+    text-align: center;
+    color: $main-color; 
+    &_right {
+        text-align: right;
+    } 
+    &_feed {
+        margin-left: 97px;
+        text-align: left;
+        font-size: 34px;
+        width: 455px;
+        letter-spacing: -0.04em;
+    }
+    &_fz64 {
+        font-size: 64px;
+    } 
+    &_fz48 {
+        font-size: 48px;
+    }
+    &_light {
+        color: #E5F2ED; 
+    }
+    &_card {
+        margin-top: 15px;
+        text-align: left;
+        font-size: 24px;
+        opacity: 0.9;
+    }
+    &_bottom {
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+}

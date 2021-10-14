@@ -12,6 +12,37 @@ window.addEventListener('DOMContentLoaded', () => {
         item.addEventListener('click', () => {
             hamburger.classList.toggle('header__hamburger_active');
             menu.classList.toggle('promo__menu_active');
-        })
-    })
-})
+        });
+    });
+});
+
+$(document).ready(function(){
+    $('.interier__carousel').slick({
+            centerMode: true,
+            arrows: false,
+            dots: true,
+            centerPadding: '20px',
+            slidesToShow: 3,
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '20px',
+                  slidesToShow: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '20px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          }
+    );
+  });

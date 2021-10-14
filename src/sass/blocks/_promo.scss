@@ -3,7 +3,8 @@
     min-height: 900px;
     padding: 0 0 32px 0;
     &__menu {
-        position: absolute;
+        position: fixed;
+        z-index: 5;
         left: -100%;
         transition: all 0.7s;
         &_active {
@@ -34,8 +35,7 @@
         justify-content: space-between;        
     }
     &__photo {
-        margin-top: 122px;
-        margin-left: 80px;
+        margin: 122px 0 0 auto;
         position: relative;  
         width: 521px; 
         img {
