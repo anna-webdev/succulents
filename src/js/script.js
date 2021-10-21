@@ -18,31 +18,46 @@ window.addEventListener('DOMContentLoaded', () => {
 
 $(document).ready(function(){
     $('.interier__carousel').slick({
-            centerMode: true,
+      centerMode: true,
+      arrows: false,
+      dots: true,
+      centerPadding: '20px',
+      slidesToShow: 3,
+      autoplay: true,
+      autoplaySpeed: 3500,
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
             arrows: false,
-            dots: true,
+            centerMode: true,
             centerPadding: '20px',
-            slidesToShow: 3,
-            responsive: [
-              {
-                breakpoint: 768,
-                settings: {
-                  arrows: false,
-                  centerMode: true,
-                  centerPadding: '20px',
-                  slidesToShow: 2
-                }
-              },
-              {
-                breakpoint: 480,
-                settings: {
-                  arrows: false,
-                  centerMode: true,
-                  centerPadding: '20px',
-                  slidesToShow: 1
-                }
-              }
-            ]
+            slidesToShow: 1
           }
-    );
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '20px',
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+
+    $('.promo__carousel').slick({
+      dots: false,
+      arrows: true,
+      prevArrow: '<button type="button" class="slick-prev"></button>',
+      nextArrow: `<button type="button" class="slick-next"><img src="../icons/promo_next_arrow.svg" alt="next"></button>`,
+      infinite: true,
+      speed: 500,
+      fade: true,
+      cssEase: 'linear',
+      /* autoplay: true, */
+      autoplaySpeed: 3500,
+
+    });
   });

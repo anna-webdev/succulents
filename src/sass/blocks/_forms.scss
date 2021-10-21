@@ -21,8 +21,11 @@
         }
     }
     label {
-        transform: translate(50%, 140%);
+        transform: translate(40%, 140%);
         &:first-child {
+            transform: translate(65%, 140%);
+        }
+        &:nth-last-child(3) {
             transform: translate(65%, 140%);
         }
     }

@@ -1,0 +1,388 @@
+@media (max-width: 1199px) {
+    .promo {
+        min-height: 600px;
+        &__carousel {
+            width: 485px;
+            margin-top: 80px;
+        }
+        &__info {
+            margin-top: 195px;
+        }
+        &__title {
+            font-size: 60px;
+        }
+        &__descr {
+            margin-top: 30px;
+            font-size: 16px;
+            width: 400px;
+        }
+        &__btns {
+            width: 400px;
+        }
+    }
+    .button {
+        width: 190px;
+        height: 55px;
+    }
+    .menu {
+        width: 40vw;
+    }
+    .about {
+        min-height: 700px;
+        padding: 200px 0 200px 0;
+        &__descr {
+            font-size: 18px;
+        }
+    }
+    .interier {
+        min-height: 650px;
+    }
+    .feed {
+        min-height: 700px;
+        padding: 280px 0 120px 0;
+    }
+};
+
+@media (max-width: 991px) {
+    .promo {
+        &__info {
+            margin: 55px auto 0 auto;
+        }
+        &__title {
+            margin: 0 auto;
+            text-align: center;
+        }
+        &__descr {
+            margin: 30px auto 0 auto;
+            text-align: center;
+        }
+        &__carousel {
+            margin: 50px auto 0 auto;
+        }
+        &__scroll {
+            margin-top: 25px;
+        }
+        &__btns {
+            margin: 20px auto 0 auto;
+        }
+    }  
+
+    .social {
+        &_promo {
+            margin-top: 70px;
+        }
+    }
+    .advantages {
+        padding: 100px 0 150px 0;
+        .title {
+            font-size: 45px;
+        }
+    }  
+
+    .why {
+        min-height: 800px;
+        background: url(../img/why_bg_md.jpg) center (center/cover) no-repeat;
+        padding: 100px 0 400px 0;
+        .title {
+            font-size: 55px;
+        }
+        &__descr {
+            width: 680px;
+        }
+    }
+
+    .choose {
+        padding: 80px 0 100px 0;
+        .title {
+            font-size: 50px;
+            &_card {
+                font-size: 20px;
+            }
+        }
+        &__card {
+            min-height: 460px;
+        }
+        .button {
+            &_card {
+                width: 130px;
+                height: 45px;
+            }
+            &_card-light {
+                width: 130px;
+                height: 45px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .feed {
+        .title {
+            &_feed {
+                margin-left: 50px;
+            }
+        }
+        .form {
+            &_left {
+                margin-left: 50px;
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .advantages {
+        &__descr {
+            padding: 0 15px 0 15px;
+        }
+    }
+
+    .why {
+        min-height: 600px;
+        .title {
+            font-size: 45px;
+        }
+        &__descr {
+            width: 520px;
+            font-size: 16px;
+            margin: 40px auto 0 auto;
+        }
+    }
+
+    .choose {
+        .title {
+            font-size: 45px;
+            &_card {
+                font-size: 18px;
+            }
+        }
+        &__card {
+            min-height: 380px;
+            padding: 20px;
+        }
+        .button {
+            &_card {
+                width: 100px;
+                height: 40px;
+            }
+            &_card-light {
+                width: 90px;
+                height: 40px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .interier {
+        padding: 70px 0;
+        .title {
+            font-size: 40px;
+        }
+        &__carousel {
+            margin: 35px auto 0 auto;
+            .slick-dots {
+                margin: 20px auto 0 auto;
+            }
+        }
+    }
+
+    .feed {
+        min-height: 600px;
+        padding: 240px 0 80px 0;
+        .title {
+            &_feed {
+                font-size: 26px;
+                margin-left: 0;
+            }
+        }
+        .form {
+            &_left {
+                margin-left: 0;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .footer {
+        .title {
+            font-size: 20px;
+        }
+        .social {
+            &_footer {
+                margin-top: 30px;
+            }
+        }
+        &__links {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .menu {
+        width: 75vw;
+    }
+    .header {
+        &__logo {
+            width: 130px;
+        }
+    }
+    .promo {
+        padding: 0 0 45px 0;
+        &__carousel {
+            width: 90%;
+        }
+        &__photo {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        &__title {
+            font-size: 35px;
+        }
+        &__descr {
+            width: 90%;
+            font-size: 14px;
+        }
+        &__btns {
+            width: 300px;
+            .button {
+                width: 140px;
+                height: 50px;
+            }
+        }
+        &__scroll {
+            display: none;
+        }
+        .social {
+            &_promo {
+                display: none;
+            }
+        }
+    }
+
+    .about {
+        background: url(../img/about_bg_sm.jpg) center (center/cover) no-repeat;
+        min-height: 500px;
+        padding: 100px 0 90px 0;
+        .title {
+            font-size: 40px;
+        }
+        &__descr {
+            margin-top: 35px;
+            font-size: 14px;
+        }
+        .button {
+            &_about {
+                font-size: 14px;
+                height: 45px;
+                width: 150px;
+            }
+        }
+    }
+
+    .advantages {
+        padding: 80px 0 80px 0;
+        .title {
+            font-size: 30px;
+        }
+    }
+
+    .why {
+        padding: 80px 0 280px 0;
+        .title {
+            font-size: 30px;
+        }
+        &__descr {
+            width: 100%;
+            font-size: 14px;
+        }
+    }
+
+    .choose {
+        .row {
+            margin-top: 20px;
+        }
+        padding: 50px 0 70px 0;
+        .title {
+            font-size: 30px;
+        }
+        &__card {
+            margin: 30px auto 0 auto;
+            width: 90%;
+        }
+        &__buttons {
+            .button {
+                width: 45%;
+            }
+        }
+    }
+
+    .interier {
+        min-height: 350px;
+        padding: 40px 0;
+        .title {
+            font-size: 25px;
+        }
+        &__carousel {
+            margin-top: 20px;
+            .slick-dots {
+                margin-top: 5px;
+            }
+        }
+    }
+
+    .feed {
+        background: url(../img/feedback_bg_sm.jpg) center (center/cover) no-repeat;
+        .title {
+            &_feed {
+                width: 100%;
+                font-size: 18px;
+            }
+        }
+        .form {
+            &_left {
+                width: 100%;
+                margin-top: 20px;
+                input {
+                    width: 100%;
+                }
+                .button {
+                    &_send {
+                        width: 160px;
+                        height: 45px;
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        min-height: 300px;
+        padding: 40px 0 40px 0;
+        .title {
+            font-size: 16px;
+        }
+        .social {
+            &_footer {
+                span {
+                    font-size: 24px;
+                }
+            }
+        }
+        &__links {
+            margin-top: 35px;
+            font-size: 12px;
+            a {
+                font-size: 12px;
+            }
+        }
+        &__logo {
+            a {
+                font-size: 14px;
+            }
+        }
+    }
+}
