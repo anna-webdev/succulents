@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-$(document).ready(function(){
+$(document).ready(function(){ /* конструкцию прописываtim один раз, когда используешь gQ */
     $('.interier__carousel').slick({
       centerMode: true,
       arrows: false,
@@ -56,8 +56,75 @@ $(document).ready(function(){
       speed: 500,
       fade: true,
       cssEase: 'linear',
-      /* autoplay: true, */
+      autoplay: true,
       autoplaySpeed: 3500,
 
+   });
+
+//Modal
+  $('[data-modal=catalog]').on('click', function () {
+    $('.overlay, #catalog').fadeIn('slow');
+  });
+  
+  $('.modal__close').on('click', function () {
+    $('.overlay, #catalog, #buy_plant, #thanks').fadeOut('slow');
+  });
+
+  $('.button_card').each(function(i) {
+    $(this).on('click', function() {
+      $('#buy_plant .modal__subtitle').text($('.title_card').eq(i).text());
+      $('.overlay, #buy_plant').fadeIn('slow');
     });
   });
+
+  function validateForms(form) {
+    $(form).validate({
+      rules: {
+        name: "required",
+        phone: "required",
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: "Please specify your name",
+        phone: "Please, enter your phone number",
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        }
+      }
+    });
+  }
+  validateForms('#left');
+  validateForms('#catalog form');
+  validateForms('#buy_plant form');
+
+  $('input[name=phone]').mask("+7 (999)-999-99-99");
+
+  $('form').submit(function(e) {
+    e.preventDefault();
+
+    if (!$(this).valid()) {
+        return;
+    }
+    
+    $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+    }).done(function() {
+        $(this).find("input").val("");
+        $('#catalog, #order').fadeOut("slow");
+        $('.overlay, #thanks').fadeIn('slow');
+        $("form").trigger('reset');
+    });
+    return false;
+});
+});
+
+
+
+
+ 

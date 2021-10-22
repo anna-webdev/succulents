@@ -2,6 +2,7 @@
     width: 440px;
     min-height: 220px;
     input {
+        margin-bottom: 5px;
         width: 440px;
         height: 45px;
         background: rgba(44, 69, 67, 0.1);
@@ -34,5 +35,18 @@
         margin-top: 60px;
         margin-left: 97px;
         position: relative;
-    }    
+    }
+    &_modal {
+        margin-top: 25px;
+        width: 310px;
+        input {
+            width: 100%;
+        }
+    }
+    .error {
+        border: solid 1px red;
+    }
+    label.error {
+        border: none;
+    }
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Succulents</title>
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -58,8 +59,8 @@
                         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                     </div>
                     <div class="promo__btns">
-                        <button class="button">Choose a plant</button>
-                        <button class="button button_clear">Learn more</button>
+                        <button data-modal="catalog" class="button">Choose a plant</button>
+                        <button data-modal="catalog" class="button button_clear">Learn more</button>
                     </div>
                 </div>
             </div>
@@ -134,7 +135,7 @@
                 <div class="about__descr">
                     We are not just a flower shop. We are a community of those who truly love plants. And we are convinced that plants create the atmosphere and comfort of your home.
                 </div>
-                <button class="button button_about">Contact us</button>
+                <button data-modal="catalog" class="button button_about">Contact us</button>
             </div>
         </div>
     </div>
@@ -208,18 +209,18 @@
                     <div class="choose__price">15$</div>
                     <div class="choose__buttons">
                         <button class="button button_card">Buy a plant</button>
-                        <button class="button button_card-light">Learn more</button>
+                        <button data-modal="catalog" class="button button_card-light">Learn more</button>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-xl-4">
                 <div class="choose__card">
                     <img src="img/choose_img2.jpg" alt="2">
-                    <div class="title title_card">Echeveria</div>
+                    <div class="title title_card">Senecio rowleyanus</div>
                     <div class="choose__price">15$</div>
                     <div class="choose__buttons">
                         <button class="button button_card">Buy a plant</button>
-                        <button class="button button_card-light">Learn more</button>
+                        <button data-modal="catalog" class="button button_card-light">Learn more</button>
                     </div>
                 </div>
             </div>
@@ -230,40 +231,40 @@
                     <div class="choose__price">15$</div>
                     <div class="choose__buttons">
                         <button class="button button_card">Buy a plant</button>
-                        <button class="button button_card-light">Learn more</button>
+                        <button data-modal="catalog" class="button button_card-light">Learn more</button>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-xl-4">
                 <div class="choose__card">
                     <img src="img/choose_img4.jpg" alt="4">
-                    <div class="title title_card">Echeveria</div>
+                    <div class="title title_card">Mix</div>
                     <div class="choose__price">15$</div>
                     <div class="choose__buttons">
                         <button class="button button_card">Buy a plant</button>
-                        <button class="button button_card-light">Learn more</button>
+                        <button data-modal="catalog" class="button button_card-light">Learn more</button>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-xl-4">
                 <div class="choose__card">
                     <img src="img/choose_img5.jpg" alt="5">
-                    <div class="title title_card">Echeveria</div>
+                    <div class="title title_card">Aeonium </div>
                     <div class="choose__price">15$</div>
                     <div class="choose__buttons">
                         <button class="button button_card">Buy a plant</button>
-                        <button class="button button_card-light">Learn more</button>
+                        <button data-modal="catalog" class="button button_card-light">Learn more</button>
                     </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-xl-4">
                 <div class="choose__card">
                     <img src="img/choose_img6.jpg" alt="6">
-                    <div class="title title_card">Echeveria</div>
+                    <div class="title title_card">Aloe</div>
                     <div class="choose__price">15$</div>
                     <div class="choose__buttons">
                         <button class="button button_card">Buy a plant</button>
-                        <button class="button button_card-light">Learn more</button>
+                        <button data-modal="catalog" class="button button_card-light">Learn more</button>
                     </div>
                 </div>
             </div>
@@ -300,21 +301,21 @@
 <section class="feed">
     <div class="container">
         <h2 class="title title_feed">Still have questions? Send your e-mail and we will contact you:</h2>
-        <form action="#" class="form form_left">
+        <form id="left" action="#" class="form form_left">
             <label for="name">
                 <img src="icons/person_icon.svg" alt="Name">
             </label>
-            <input id="name" required name="name" placeholder="Your name"  type="text">
+            <input id="name" name="name" placeholder=" Your name"  type="text">
 
             <label for="mail">
                 <img src="icons/envelope_icon.svg" alt="mail">
             </label>
-            <input id="mail" required name="mail" placeholder="Your e-mail address"  type="e-mail">
+            <input id="mail" name="email" placeholder="Your e-mail address"  type="e-mail">
 
             <label for="phone">
                 <img src="icons/phone-icon.svg" alt="call">
             </label>
-            <input id="phone" required name="phone" placeholder="Your phone number"  type="tel">
+            <input id="phone" name="phone" placeholder="Your phone number">
 
             <button class="button button_send">Send form</button>
         </form>
@@ -349,9 +350,66 @@
     </div>
 </section>
 
+<div class="overlay">
+    <div class="modal" id="catalog">
+        <div class="modal__close">&times;</div>
+        <h2 class="title title_fz22 title_left">Send Your contacts, and get our discount-catalog:</h2>
+        <form action="#" class="form form_modal">
+            <label for="name">
+                <img src="icons/person_icon.svg" alt="Name">
+            </label>
+            <input id="name" required name="name" placeholder="Your name"  type="text">
+
+            <label for="mail">
+                <img src="icons/envelope_icon.svg" alt="mail">
+            </label>
+            <input id="mail" required name="email" placeholder="Your e-mail address"  type="e-mail">
+
+            <label for="phone">
+                <img src="icons/phone-icon.svg" alt="call">
+            </label>
+            <input id="phone" required name="phone" placeholder="Your phone number">
+
+            <button class="button button_send button_modal">Send form</button>
+        </form>
+    </div>
+
+    <div class="modal" id="buy_plant">
+        <div class="modal__close">&times;</div>
+        <h2 class="title title_fz28 title_left">Your Plant:</h2>
+        <div class="modal__subtitle">Echeveria</div>
+        <form action="#" class="form form_modal">
+            <label for="name">
+                <img src="icons/person_icon.svg" alt="Name">
+            </label>
+            <input id="name" required name="name" placeholder="Your name"  type="text">
+
+            <label for="mail">
+                <img src="icons/envelope_icon.svg" alt="mail">
+            </label>
+            <input id="mail" required name="email" placeholder="Your e-mail address"  type="e-mail">
+
+            <label for="phone">
+                <img src="icons/phone-icon.svg" alt="call">
+            </label>
+            <input id="phone" required name="phone" placeholder="Your phone number">
+
+            <button class="button button_send button_modal">Buy a plant</button>
+        </form>
+    </div>
+
+    <div class="modal modal_thanks" id="thanks">
+        <div class="modal__close">&times;</div>
+        <h2 class="title title_fz28">Thanks!</h2>
+        <div class="modal__subtitle modal__subtitle_thanks">Our manager will contact you soon</div>
+    </div>
+</div>
+
 <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/script.js"></script>    
 </body>
 </html>
