@@ -1,8 +1,26 @@
 .form {
+    position: relative;
     width: 440px;
     min-height: 220px;
+    &__icon {
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        transform: translate(60%, 160%);
+        &:nth-of-type(2) {
+            transform: translate(65%,160%);
+        }
+        &:nth-of-type(3) {
+            width: 15px;
+            height: 15px;
+            transform: translate(90%, 193%);
+        }
+        img {
+            width: 100%;
+        }
+    }
     input {
-        margin-bottom: 5px;
+        margin-top: 20px;
         width: 440px;
         height: 45px;
         background: rgba(44, 69, 67, 0.1);
@@ -15,22 +33,15 @@
         color: $main-color;
         outline: none;
         transition: all 0.6s;
+        &:first-child {
+            margin-top: 0;
+        }
         &:focus {
             border: 1px solid $main-color;
             box-shadow: 0px 5px 20px rgba(44, 69, 67, 0.1);
             transform: translateY(-5%);
         }
     }
-    label {
-        transform: translate(40%, 140%);
-        &:first-child {
-            transform: translate(65%, 140%);
-        }
-        &:nth-last-child(3) {
-            transform: translate(65%, 140%);
-        }
-    }
-
     &_left {
         margin-top: 60px;
         margin-left: 97px;
@@ -44,9 +55,16 @@
         }
     }
     .error {
-        border: solid 1px red;
+        border: solid 1px rgb(102, 11, 11);
     }
     label.error {
+        margin-top: 5px;
         border: none;
+        font-family: "Roboto";
+        font-weight: 300;
+        font-size: 14px;
+        color: $main-color;
     }
 }
+
+    

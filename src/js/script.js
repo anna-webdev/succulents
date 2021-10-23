@@ -122,6 +122,8 @@ $(document).ready(function(){ /* конструкцию прописываtim о
     });
     return false;
 });
+
+new WOW().init();
 });
 
 

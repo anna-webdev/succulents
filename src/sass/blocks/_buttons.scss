@@ -8,9 +8,13 @@
     font-size: 16px;
     color: #FFFFFF;
     transition: all 0.6s;
-    
     &:focus {
         background: #0D2F2C;
+        box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.1), inset 5px 5px 4px rgba(0, 0, 0, 0.3);
+    }
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0px 40px 36px rgba(44, 69, 67, 0.12);
     }
     &_clear {
        border: 1px solid $main-color;

@@ -226,6 +226,13 @@
         &__logo {
             width: 130px;
         }
+        &__hamburger {
+            width: 30px;
+            span {
+                width: 30px;
+                margin-top: 7px;
+            }
+        }
     }
     .promo {
         padding: 0 0 45px 0;
@@ -356,6 +363,7 @@
                     }
                 }
             }
+            
         }
     }
 
@@ -384,5 +392,13 @@
                 font-size: 14px;
             }
         }
+    }
+
+    .modal {
+        width: 90vw;
+        form {
+            width: 100%;
+        }
+            
     }
 }
